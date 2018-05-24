@@ -14,5 +14,18 @@ pipeline {
                 sh 'echo "Just another command 3"'
             }
         }
+        
+        stage('Sanity check') {
+            steps {
+                input "Does the staging environment look ok?"
+            }
+        }
+        
+        stage('Deploy - Production') {
+            steps {
+                sh 'echo "Deploy to production...."'
+            }
+        }
+
     }
 }
