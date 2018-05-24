@@ -10,6 +10,7 @@ pipeline {
                     ls -lah
                 '''
                 sh 'echo "Just another command"'
+                sh 'echo "Just another command"'
             }
         }
     }
