@@ -9,8 +9,9 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
-                sh 'echo "Just another command"'
-                sh 'echo "Just another command"'
+                sh 'echo "Just another command 1"'
+                sh 'echo "Just another command 2"'
+                sh 'echo "Just another command 3"'
             }
         }
     }
